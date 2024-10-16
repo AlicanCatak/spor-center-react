@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar.scrolled {
+  background-color: #355494; /* Kaydırma olunca arka plan kırmızı olacak */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.join-us {
+  background-color: #f49b0b;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../assets/images/hero-man.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+.hero-content {
+  color: white;
+  max-width: 700px;
+  margin-left: 20px;
+}
+
+.label {
+  background-color: #355494;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.title1 {
+  font-size: 105px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  line-height: 1.1;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.buttons {
+  display: flex;
+  gap: 50px;
+}
+
+.sign-up,
+.details {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.sign-up {
+  background-color: #355494;
+  color: white;
+}
+
+.details {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.lorem1 {
+  width: 80vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 1150px;
+  padding: 0px 25px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}

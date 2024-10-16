@@ -1,0 +1,48 @@
+.bmi-calculator-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.bmi-title {
+  color: #355494;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.bmi-description {
+  color: #4e4e4e;
+}
+
+.bmi-input {
+  margin-top: 30px;
+  border: black 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.bmi-heading {
+  font-size: 25px;
+  color: #333;
+  text-align: center;
+}
+
+.bmi-position {
+  position: relative; /* Indicator'un bu elemente göre konumlanmasını sağlar */
+  width: 600px; /* Resim genişliği */
+  margin: 0 auto; /* Resmi ortalamak için */
+}
+
+/* BMI indicator (triangle) */
+#bmi-indicator {
+  position: absolute;
+  bottom: -10px; /* Üçgenin resmin hemen altında olmasını sağlar */
+  left: 0; /* Üçgeni resmin tam başlangıcına yerleştirir */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #f4990b; /* Üçgenin rengi */
+  transition: left 0.3s ease; /* Üçgenin yumuşak geçişi */
+}
